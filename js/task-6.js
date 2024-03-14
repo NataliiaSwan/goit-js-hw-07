@@ -1,48 +1,7 @@
-// const input = document.querySelector('input');
-// const createButton = document.querySelector('[data-create]');
-// const destroyButton = document.querySelector('[data-destroy]');
-// const boxesContainer = document.querySelector('#boxes');
-
-// function getRandomHexColor() {
-//   return `#${Math.floor(Math.random() * 16777215)
-//     .toString(16)
-//     .padStart(6, '0')}`;
-// }
-
-// function createBoxes(amount) {
-//   boxesContainer.innerHTML = '';
-
-//   let size = 30;
-
-//   for (let i = 0; i < amount; i++) {
-//     const box = document.createElement('div');
-//     box.style.width = box.style.height = `${size}px`;
-//     box.style.backgroundColor = getRandomHexColor();
-//     boxesContainer.appendChild(box);
-
-//     size += 10;
-//   }
-// }
-
-// createButton.addEventListener('click', () => {
-//   const amount = parseInt(input.value);
-
-//   if (amount >= 1 && amount <= 100) {
-//     createBoxes(amount);
-//     input.value = '';
-//   } else {
-//     alert('Будь ласка, введіть число від 1 до 100.');
-//   }
-// });
-
-// destroyButton.addEventListener('click', () => {
-//   boxesContainer.innerHTML = '';
-// });
-
-const input = document.juerySelector('input');
-const create = document.juerySelector('[data-create]');
-const destroy = document.juerySelector('[data-destroy]');
-const boxesContainer = document.juerySelector('#boxes');
+const input = document.querySelector('.controls-input');
+const create = document.querySelector('[data-create]');
+const destroy = document.querySelector('[data-destroy]');
+const boxesContainer = document.querySelector('#boxes');
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
