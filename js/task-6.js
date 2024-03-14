@@ -39,11 +39,10 @@
 //   boxesContainer.innerHTML = '';
 // });
 
-
-const input = document.juerySelector("input");
-const create = document.juerySelector("[data-create]");
-const destroy = document.juerySelector("[data-destroy]");
-const boxesContainer = document.juerySelector("#boxes");
+const input = document.juerySelector('input');
+const create = document.juerySelector('[data-create]');
+const destroy = document.juerySelector('[data-destroy]');
+const boxesContainer = document.juerySelector('#boxes');
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
@@ -51,30 +50,26 @@ function getRandomHexColor() {
 }
 let width = 30;
 let height = 30;
-createButton.addEventListener("click", () => {
+createButton.addEventListener('click', () => {
   if (input.value < 1 || input.value > 100) {
     return;
   }
-  });
+});
 createButton(input, value);
-destroyButton.addEventListener("click", () => {
+destroyButton.addEventListener('click', () => {
   boxesContainer.innerHTML = '';
   input.value = '';
-}
-)
+});
 function createBoxes(amount) {
   for (let i = 0; i < amount; i++) {
     const box = document.createElement('div');
-   box.style.width = 30;
-   box.style.height = 30;
-  box.style.backgroundColor = getRandomHexColor();
-  boxesContainer.appendChild(box);
-size += 10;
+    box.style.width = 30;
+    box.style.height = 30;
+    box.style.backgroundColor = getRandomHexColor();
+    boxesContainer.appendChild(box);
+    size += 10;
   }
-};
-
-
-
+}
 
 // Напиши скрипт створення й очищення колекції елементів з наступним функціоналом.
 // Є input, у який користувач вводить бажану кількість елементів.
@@ -94,7 +89,7 @@ size += 10;
 
 // Розміри першого <div> елемента мають бути 30px на 30px.
 // Кожен наступний елемент повинен бути ширшим і вищим від попереднього на 10px.
-// Усі елементи повинні мати випадковий колір фону.Використовуй готову 
+// Усі елементи повинні мати випадковий колір фону.Використовуй готову
 // функцію getRandomHexColor() для отримання випадкового кольору.
 // function getRandomHexColor() {
 //   return `#${Math.floor(Math.random() * 16777215)
