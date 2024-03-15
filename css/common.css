@@ -35,7 +35,6 @@ body {
 }
 
 .item > h2 {
-
   font-weight: 600;
   font-size: 24px;
   padding-left: 16px;
@@ -52,7 +51,6 @@ body {
 }
 
 .item > ul > li {
-  
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -106,7 +104,6 @@ body {
   color: #2e2f42;
 }
 #name-output {
-  
   font-weight: 600;
   font-size: 24px;
   line-height: 1.33333;
@@ -122,12 +119,10 @@ body {
   border-radius: 8px;
   padding: 23px;
   width: 408px;
-
   background: #fff;
 }
 .login-form > label {
   display: block;
-  
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -175,7 +170,6 @@ body {
   width: 148px;
   height: 40px;
   background: #4e75ff;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
