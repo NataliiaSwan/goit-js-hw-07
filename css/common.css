@@ -189,27 +189,27 @@ body {
   height: 104px;
   background: #f6f6fe;
 }
-.controls-input {
+#controls > input {
   border: 1px solid #808080;
   border-radius: 8px;
-  padding: 8px 72px;
+
   width: 150px;
   height: 40px;
 }
 
-.controls-data-create {
+#controls > button[data-create] {
   border-radius: 8px;
   padding: 8px 16px;
   width: 120px;
   height: 40px;
   background: #4e75ff;
 }
-.controls-data-destroy {
+ #controls > button[data-destroy] {
   border-radius: 8px;
   padding: 8px 16px;
   width: 120px;
   height: 40px;
-  background: #ff4e4e;
+  background: #ff4e4e;.
 }
 #boxes {
   display: flex;

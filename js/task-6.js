@@ -4,10 +4,13 @@ const refs = {
   destroyEl: document.querySelector('button[data-destroy]'),
   boxesEl: document.querySelector('#boxes'),
 };
+
 refs.createEl.addEventListener('click', onCreateClick);
 refs.destroyEl.addEventListener('click', onDestroyClick);
 function onCreateClick() {
-  let amount = refs.amountEl.value;
+  const amount = refs.amountEl.value;
+  const value = Number(amount);
+
   if (amount < 1 || amount > 100) {
     return alert(
       'Ooops, something go wrong!!! The value must be less than 100'
@@ -28,4 +31,9 @@ function createBoxes(amount) {
     elem.style.backgroundColor = getRandomHexColor();
     refs.boxesEl.append(elem);
   }
+}
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
 }
