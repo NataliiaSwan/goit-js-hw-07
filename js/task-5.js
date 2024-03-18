@@ -8,9 +8,9 @@ const button = document.querySelector('.change-color');
 const span = document.querySelector('.color');
 
 button.addEventListener('click', randomNexColor);
+
 function randomNexColor() {
   const newColor = getRandomHexColor();
   document.body.style.backgroundColor = newColor;
-  colorSpan.textContent = newColor;
+  span.textContent = newColor;
 }
-randomNexColor();
